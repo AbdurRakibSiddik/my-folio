@@ -1,0 +1,43 @@
+@import '../mixin/mixins';
+@import '../variables/variables';
+
+#form{
+    background: #0b0b0b;
+    padding: 60px 0;
+    ul{
+        li{
+            input{
+                width: 645px;
+                padding: 10px 0;
+                text-align: center;
+                background: transparent;
+               border: none;
+                color: #fff;
+                border-bottom: 1px solid #ddd !important;
+                margin-bottom: 10px;
+            }
+            textarea{
+                width: 920px;
+                height: 30px;
+                padding: 10px 0;
+                text-align: center;
+                background: transparent;
+               border: none;
+                color: #fff;
+                border-bottom: 1px solid #ddd !important;
+                margin-bottom: 10px;
+                resize: none;
+                margin-top: 20px;
+            }
+        }
+    }
+    button{
+        padding: 20px 70px;
+        background: yellow;
+       @include ts (#0b1016, 14px, 800,$open);
+       margin-top: 40px;
+       outline: none;
+       border: none;
+       cursor: pointer;
+    }
+}

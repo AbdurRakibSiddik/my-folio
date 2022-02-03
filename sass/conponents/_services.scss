@@ -1,0 +1,47 @@
+@import '../mixin/mixins';
+@import '../variables/variables';
+
+
+
+#services{
+    padding: 70px 0 165px;
+    .serv_head{
+        width: 500px;
+        h2{
+            @include ts ($color, 46px, 800, $open);
+            text-transform: uppercase;
+        }
+        p{
+            @include ts ($pc, 16px, 400, $open);
+            line-height: 41px;
+        }
+    }
+    .serv_row{
+        width: 500px;
+        margin-top: 30px;
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .serv_col{
+            max-width: 39.9%;
+            margin-bottom: 40px;
+           
+           
+            i{
+                color: $color;
+                font-size: 20px;
+                margin-bottom: 5px
+            
+            }
+            h4{
+                @include ts ($pc, 16px,800,$open);
+                margin: 5px 0;
+            }
+            p{
+                @include ts ($pc, 11px,400,$open);
+                line-height: 21px;
+            }
+        }
+    }
+}

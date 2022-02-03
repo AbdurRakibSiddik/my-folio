@@ -1,0 +1,42 @@
+@import '../mixin/mixins';
+@import '../variables/variables';
+
+#manu{
+    height: 60px;
+    background: $color;
+  
+    
+&.fix_manu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: red;
+    z-index: 999;
+}
+    .manu_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .logo{
+            width: 20%;
+            line-height: 60px;
+        }
+        .main_manu{
+            width: 80%;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: end;
+                li{
+                    margin-left: 50px;
+                    a{
+                        text-transform: uppercase;
+                        @include ts(#fff, 12px, 800, $open);
+                        line-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}

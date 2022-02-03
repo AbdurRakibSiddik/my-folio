@@ -1,0 +1,74 @@
+@import '../mixin/mixins';
+@import '../variables/variables';
+
+
+#about{
+    padding: 100px 0;
+    .common_head{
+        padding: 0 155px;
+        h2{
+            @include ts($color, 46px, 800, $open);
+            margin-bottom: 10px;
+        }
+        p{
+            @include ts($pc, 15px, 400, $open);
+            line-height: 41px;
+            margin-top: 10px;
+            span{
+                @include ts($pc, 23px, 800, $open);
+            }
+
+        }
+    }
+    .about_row{
+        margin-top: 115px;
+        padding: 0 56px 60px 90px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       position: relative;
+        .about_col1,
+        .about_col2,
+        .about_col3,
+        .about_col4{
+            max-width: 18%;
+         
+           
+            i{
+                color: $color;
+                font-size: 30px
+            
+            }
+            h4{
+                @include ts ($pc, 16px,800,$open);
+                margin: 15px 0;
+            }
+            p{
+                @include ts ($pc, 11px,400,$open);
+            }
+         
+        }
+        .about_col1{
+            &::after{
+                @include after(1px,255px,#ddd);
+                left: 320px;
+                bottom: -20px;
+           }
+        }
+        .about_col2{
+            &::after{
+                @include after(1px,255px,#ddd);
+                left: 597px;
+                bottom: -20px;
+           }
+        }
+        .about_col3{
+            &::after{
+                @include after(1px,255px,#ddd);
+                right: 286px;
+                bottom: -20px;
+           }
+        }
+        
+    }
+}

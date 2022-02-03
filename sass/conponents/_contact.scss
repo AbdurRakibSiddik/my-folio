@@ -1,0 +1,24 @@
+@import '../mixin/mixins';
+@import '../variables/variables';
+
+#contact {
+  padding: 70px 0;
+
+    .work_head {
+        padding: 0 259px;
+
+        h2 {
+            @include ts($color, 46px, 800, $open);
+            margin-bottom: 10px;
+        }
+
+        p {
+            @include ts($pc, 15px, 400, $open);
+            line-height: 41px;
+            margin-top: 10px;
+
+
+        }
+
+    }
+}

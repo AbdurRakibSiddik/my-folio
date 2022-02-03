@@ -1,0 +1,37 @@
+@import '../mixin/mixins';
+@import '../variables/variables';
+
+
+
+#banner{
+    padding: 210px 0;
+    .banner_row{
+        h2{
+            @include ts(#fff, 30px, 500, $open)
+        }
+        h1{
+            @include ts(#fff, 70px, 800, $open);
+            text-transform: uppercase;
+            letter-spacing: 25px;
+        }
+        p{
+            @include ts(#fff, 20px, 500, $open);
+            margin-bottom: 50px;
+        }
+        img{
+           display: block;
+           margin: 0 auto;
+        }
+        a{
+           
+             @include ts(#0b1016, 14px, 800, $open);
+             padding: 19px 43px;
+             background: yellow;
+             border: 1px solid yellow;
+             margin-top: 50px;
+             &:hover{
+                 background: #cfc91d;
+             }
+        }
+    }
+}
